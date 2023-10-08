@@ -1,0 +1,42 @@
+<section class="habilidades contenedor" id="habilidades">
+  <h2>Skills</h2>
+  <div class="habilidades-imagenes">
+    <div class="habilidad" *ngFor="let imagen of habilidades">
+      <picture class="habilidad__img">
+        <!-- Formato WebP -->
+        <source [srcset]="imagen + '.webp'" type="image/webp" />
+
+        <!-- Formato JPEG -->
+        <source [srcset]="imagen + '.jpg'" type="image/jpeg" />
+
+        <!-- Formato PNG (alternativa) -->
+        <img
+          [src]="imagen + '.png'"
+          [alt]="imagen | slice : 11"
+          loading="lazy"
+        />
+      </picture>
+      <h3 class="habilidad__h3">{{ imagen | slice : 11 | titlecase }}</h3>
+    </div>
+  </div>
+  <h2>Learning</h2>
+  <div class="habilidades-imagenes">
+    <div class="habilidad" *ngFor="let imagen of aprendiendo">
+      <picture class="habilidad__img">
+        <!-- Formato WebP -->
+        <source [srcset]="imagen + '.webp'" type="image/webp" />
+
+        <!-- Formato JPEG -->
+        <source [srcset]="imagen + '.jpg'" type="image/jpeg" />
+
+        <!-- Formato PNG (alternativa) -->
+        <img
+          [src]="imagen + '.png'"
+          [alt]="imagen | slice : 11"
+          loading="lazy"
+        />
+      </picture>
+      <h3 class="habilidad__h3">{{ imagen | slice : 11 | titlecase }}</h3>
+    </div>
+  </div>
+</section>

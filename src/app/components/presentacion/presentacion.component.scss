@@ -1,0 +1,61 @@
+.present{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 3rem 0;
+
+    a{
+      color: white;
+    }
+
+    @media screen and (min-width: 767px) {
+        flex-direction: row;
+      }
+
+    &__parrafos{
+        flex-basis: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        text-align: center;
+        @media screen and (min-width: 767px) {
+           align-items: flex-start;
+            justify-content: center;
+            text-align: left;
+        }
+        button{
+          width: 50%;
+          height: 4rem;
+          font-size: 1.8rem;
+        }
+    }
+
+    &__hola{
+        display: flex;
+        flex-direction: column;
+        font-size: 2rem;
+        gap: 1rem;
+       span{
+        font-size: 3rem;
+       }
+    }
+
+    &__puesto{
+      font-size: 2rem;
+
+      
+    }
+
+    &__img{
+     flex-basis: 50%;
+    }
+
+    &__redes{
+        display: flex;
+        gap: 2rem;
+       
+        font-size: 3rem;
+        cursor: pointer;
+    }
+}

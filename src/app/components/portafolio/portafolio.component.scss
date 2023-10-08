@@ -1,0 +1,38 @@
+
+
+.portafolio{
+    h2{
+        text-align: center;
+    }
+}
+
+.proyectos{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+    padding: 20px 0;
+
+    @media screen and (min-width: 767px) {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+    }
+
+    .card{
+        width: 400px;
+
+        img{
+            
+            width: 100%;
+            object-fit: cover;
+        }
+
+        @media screen and (min-width: 767px) {
+           width: 500px;
+        }
+        
+        &:hover{
+            transform: scale(1.1);
+            transition: all 300ms;
+        }
+    }
+}

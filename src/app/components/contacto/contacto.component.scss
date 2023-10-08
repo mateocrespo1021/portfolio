@@ -1,0 +1,69 @@
+.contacto {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    height: 100%;
+
+    @media screen and (min-width: 767px) {
+        flex-direction: row;
+    }
+}
+
+
+.informacion {
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(14, 14, 41, 1) 0%, rgba(13, 15, 51, 1) 12%, rgba(13, 16, 53, 1) 31%, rgba(13, 16, 55, 1) 39%, rgba(13, 15, 52, 1) 100%, rgba(8, 28, 133, 1) 100%, rgba(0, 212, 255, 1) 100%);
+    color: white;
+    flex-basis: 50%;
+    border-radius: 10px;
+
+    &__h3 {
+        text-align: center;
+    }
+}
+
+.form {
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    button{
+        color: white;
+        font-size: 18px;
+        margin: 0 auto;
+      }
+  
+}
+
+.campo {
+
+    label {
+        text-align: left;
+        font-weight: bold;
+    }
+
+    input {
+        border-radius: 10px;
+        border-color: black;
+        outline: none;
+        padding: 5px;
+
+    }
+
+    textarea {
+        border-radius: 10px;
+        border-color: black;
+        outline: none;
+    }
+
+    
+    display: flex;
+    flex-direction: column;
+}

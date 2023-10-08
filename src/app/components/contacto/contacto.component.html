@@ -1,0 +1,31 @@
+<div id="contacto" class="contacto contenedor">
+    <h2>Contact Me</h2>
+    <div class="flex">
+   <div class="informacion">
+     <h3 class="informacion__h2">Contact Information</h3>
+     <div class="informacion__info">
+      <i class="fa-solid fa-phone"></i>
+      <p>+593 983513154</p>
+     </div>
+     <div class="informacion__info">
+      <i class="fa-solid fa-envelope"></i>
+      <p>softpm23@gmail.com</p>
+     </div>
+   </div>
+   <form class="form" action="" (ngSubmit)="onSubmit()" [formGroup]="contactForm">
+    <div class="campo">
+      <label for="name">Name</label>
+      <input id="name" type="text" placeholder="Name" formControlName="name">
+    </div>
+    <div class="campo">
+      <label for="email">Email</label>
+      <input id="email" type="email" placeholder="Email" formControlName="email">
+    </div>
+    <div class="campo">
+      <label for="message">Message</label>
+      <textarea name="message" id="message" cols="20" rows="5" formControlName="message"></textarea>
+    </div>
+    <button class="btn btn-dark p-2 w-50">Send</button>
+   </form>
+  </div>
+</div>
