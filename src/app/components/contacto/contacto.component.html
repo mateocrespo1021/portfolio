@@ -1,18 +1,18 @@
 <div id="contacto" class="contacto contenedor">
-    <h2>Contact Me</h2>
-    <div class="flex">
-   <div class="informacion">
-     <h3 class="informacion__h2">Contact Information</h3>
-     <div class="informacion__info">
-      <i class="fa-solid fa-phone"></i>
-      <p>+593 983513154</p>
-     </div>
-     <div class="informacion__info">
-      <i class="fa-solid fa-envelope"></i>
-      <p>matcre01@gmail.com</p>
-     </div>
-   </div>
-   <form class="form" action="" (ngSubmit)="onSubmit()" [formGroup]="myForm">
+  <h2>Contact Me</h2>
+  <div class="flex">
+    <div class="informacion">
+      <!-- <h3 class="informacion__h2">Contact Information</h3> -->
+      <div class="informacion__info">
+        <i class="fa-solid fa-phone"></i>
+        <p>+593 0983513154</p>
+      </div>
+      <div class="informacion__info">
+        <i class="fa-solid fa-envelope"></i>
+        <p>{{email}}</p>
+      </div>
+    </div>
+    <!-- <form class="form" action="" (ngSubmit)="onSubmit()" [formGroup]="myForm">
     <div class="campo">
       <label for="name">Name</label>
       <input name="user_name" id="name" type="text" placeholder="Name" formControlName="user_name">
@@ -35,6 +35,6 @@
     </span>
     </div>
     <button class="btn btn-dark p-2 w-50">Send</button>
-   </form>
+   </form> -->
   </div>
 </div>

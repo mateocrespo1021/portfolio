@@ -7,15 +7,19 @@ import { Component } from '@angular/core';
 })
 export class HabilidadesComponent {
   habilidades = [
-    'assets/img/html',
-    'assets/img/css',
-    'assets/img/scss',
-    'assets/img/js',
-    'assets/img/angular',
-    'assets/img/php',
-    'assets/img/java',
-    'assets/img/spring',
+    'assets/img/JavaScript',
+    'assets/img/TypeScript',
+    'assets/img/Angular',
+    'assets/img/SCSS',
+    'assets/img/Tailwind',
+    'assets/img/Bootstrap',
+    'assets/img/PHP',
+    'assets/img/Laravel',
+    'assets/img/Java',
+    'assets/img/SpringBoot',
+    'assets/img/GitHub',
+    'assets/img/DigitalOcean',
   ];
 
-  aprendiendo = ['assets/img/nodejs', 'assets/img/sql'];
+  aprendiendo = ['assets/img/nodejs'];
 }

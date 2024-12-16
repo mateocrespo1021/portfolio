@@ -1,69 +1,79 @@
 .contacto {
-    text-align: center;
-    padding: 20px 0;
+  text-align: center;
+  padding: 20px 0;
 }
 
 .flex {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-
-    height: 100%;
-
-    @media screen and (min-width: 767px) {
-        flex-direction: row;
-    }
+  // display: flex;
+  // flex-direction: column;
+  gap: 10px;
+  height: 100%;
+  // @media screen and (min-width: 767px) {
+  //     flex-direction: row;
+  // }
 }
 
-
 .informacion {
-    background: rgb(2, 0, 36);
-    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(14, 14, 41, 1) 0%, rgba(13, 15, 51, 1) 12%, rgba(13, 16, 53, 1) 31%, rgba(13, 16, 55, 1) 39%, rgba(13, 15, 52, 1) 100%, rgba(8, 28, 133, 1) 100%, rgba(0, 212, 255, 1) 100%);
-    color: white;
-    flex-basis: 50%;
-    border-radius: 10px;
+background: black;
+  color: white;
+  flex-basis: 50%;
+  border-radius: 10px;
+  width: 100%;
+  &__h3 {
+    text-align: center;
+  }
 
-    &__h3 {
-        text-align: center;
+  &__info {
+    display: flex;
+    padding: 10px;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+
+    p {
+      padding: 0;
+      margin: 0;
+      font-size: 2rem;
     }
+
+    i {
+      font-size: 2rem;
+    }
+  }
 }
 
 .form {
-    flex-basis: 50%;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
+  flex-basis: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 
-    button{
-        color: white;
-        font-size: 18px;
-        margin: 0 auto;
-      }
-  
+  button {
+    color: white;
+    font-size: 18px;
+    margin: 0 auto;
+  }
 }
 
 .campo {
+  label {
+    text-align: left;
+    font-weight: bold;
+  }
 
-    label {
-        text-align: left;
-        font-weight: bold;
-    }
+  input {
+    border-radius: 10px;
+    border-color: black;
+    outline: none;
+    padding: 5px;
+  }
 
-    input {
-        border-radius: 10px;
-        border-color: black;
-        outline: none;
-        padding: 5px;
+  textarea {
+    border-radius: 10px;
+    border-color: black;
+    outline: none;
+  }
 
-    }
-
-    textarea {
-        border-radius: 10px;
-        border-color: black;
-        outline: none;
-    }
-
-    
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }

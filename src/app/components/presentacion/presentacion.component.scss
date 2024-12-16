@@ -3,9 +3,9 @@
     flex-direction: column;
     gap: 2rem;
     padding: 3rem 0;
-
-    a{
-      color: white;
+   
+    i{
+      color: black;
     }
 
     @media screen and (min-width: 767px) {
@@ -28,6 +28,11 @@
           width: 50%;
           height: 4rem;
           font-size: 1.8rem;
+
+
+          a{
+            color: white;
+          }
         }
     }
 

@@ -16,7 +16,7 @@ import Swal from 'sweetalert2';
 export class ContactoComponent {
   public alerta: boolean = false;
   public emailPattern: string = '^[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,4}$';
-
+  email: string = 'mateocodeando01@gmail.com';
   constructor(private fb: FormBuilder) {}
 
   public myForm: FormGroup = this.fb.group({
@@ -43,14 +43,14 @@ export class ContactoComponent {
       Swal.fire({
         icon: 'error',
         title: 'Oops...',
-        text: 'Llene todos los campos!'
+        text: 'Llene todos los campos!',
       });
 
-      return
-    };
+      return;
+    }
 
     //Validacion correcta
-   
+
     const templateParams = {
       message: `Mensaje : ${this.myForm.value.message}  Email : ${this.myForm.value.user_email} Nombre : ${this.myForm.value.user_name}`,
     };
@@ -65,7 +65,7 @@ export class ContactoComponent {
       .then(
         (result: EmailJSResponseStatus) => {
           Swal.fire('Enviado Correctamente!', '', 'success');
-          this.myForm.reset()
+          this.myForm.reset();
         },
         (error) => {
           Swal.fire({
