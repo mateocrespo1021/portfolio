@@ -16,7 +16,7 @@ import Swal from 'sweetalert2';
 export class ContactoComponent {
   public alerta: boolean = false;
   public emailPattern: string = '^[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,4}$';
-  email: string = 'mateocodeando01@gmail.com';
+  email: string = 'matcre01@gmail.com';
   constructor(private fb: FormBuilder) {}
 
   public myForm: FormGroup = this.fb.group({
